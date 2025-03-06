@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:travel_app/models/item_list.dart';
 
-class Repository {
+class Repository extends ChangeNotifier {
   // Coffee List
   List<Itemlist> coffeeList = [
     Itemlist(
@@ -165,11 +166,13 @@ class Repository {
   // 장바구니 method + 추가
   void addItem(Itemlist list) {
     itemCart.add(list);
+    notifyListeners();
   }
 
   // 장바구니 method + 제거
   void deleteItem(Itemlist list) {
     itemCart.remove(list);
+    notifyListeners();
   }
 
   // 리스트 종류

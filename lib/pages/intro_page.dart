@@ -12,7 +12,7 @@ class IntroPage extends StatelessWidget {
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("lib/images/introBackground.jpg"),
+            image: AssetImage("assets/images/introBackground.jpg"),
             colorFilter: ColorFilter.mode(
               // ignore: deprecated_member_use
               Colors.black.withOpacity(0.5),

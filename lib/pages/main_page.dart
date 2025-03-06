@@ -29,10 +29,10 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     List<Widget> pageList = [
-      const CoffeePage(),
-      const ChocoPage(),
-      const CakePage(),
-      const IceCreamPage(),
+      CoffeePage(),
+      ChocoPage(),
+      CakePage(),
+      IceCreamPage(),
     ];
     return Scaffold(
       appBar: AppBar(
@@ -78,7 +78,7 @@ class _MainPageState extends State<MainPage> {
           NavigationDestination(
             icon: Icon(
               Icons.egg_alt,
-              color: currentIndex == 3 ? Colors.brown[900] : Colors.grey,
+              color: currentIndex == 3 ? Colors.brown[500] : Colors.grey,
             ),
             label: "Chocolate",
           ),
