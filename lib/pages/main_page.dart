@@ -1,9 +1,20 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+// Cateogry
+import "package:travel_app/models/item_list.dart";
 
 class MainPage extends StatelessWidget {
-  const MainPage({super.key});
-
+  MainPage({super.key});
+  Itemlist cateogry = Itemlist(
+    backgroundImage: "",
+    title: "Pizza",
+    location: "New York",
+    price: 15.0,
+    review: 4,
+    isCart: true,
+    category: "Pizza",
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,13 +27,8 @@ class MainPage extends StatelessWidget {
           ),
         ),
       ),
+
       // 화면을 동적으로 그리겠다는 의미
-      body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-        ),
-        itemBuilder: (context, index) {},
-      ),
     );
   }
 }
