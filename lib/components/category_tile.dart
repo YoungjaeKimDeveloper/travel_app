@@ -9,7 +9,6 @@ class CategoryTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("Item List $itemlist");
     return Padding(
       padding: const EdgeInsets.all(2.0),
       child: Container(
@@ -57,7 +56,7 @@ class CategoryTile extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Icon(Icons.pin_drop, color: Colors.white),
+                          Icon(Icons.pin_drop, color: Colors.red[400]),
                           Text(
                             itemlist.location,
                             style: TextStyle(

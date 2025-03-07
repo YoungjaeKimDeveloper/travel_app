@@ -30,9 +30,9 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     List<Widget> pageList = [
       CoffeePage(),
-      ChocoPage(),
       CakePage(),
       IceCreamPage(),
+      ChocoPage(),
     ];
     return Scaffold(
       appBar: AppBar(

@@ -45,8 +45,8 @@ class Repository extends ChangeNotifier {
   // Ice Cream List
   List<Itemlist> iceCreamList = [
     Itemlist(
-      backgroundImage: "../images/icecream/icecream1.jpg",
-      title: "Icecream Frozen Delight",
+      backgroundImage: "assets/images/icecream/icecream0.jpg",
+      title: "Frozen Delight",
       location: "Sydney",
       price: 5,
       review: 3,
@@ -54,8 +54,8 @@ class Repository extends ChangeNotifier {
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/icecream/icecream2.jpg",
-      title: "Icecream Choco Swirl",
+      backgroundImage: "assets/images/icecream/icecream1.jpg",
+      title: "Choco Swirl",
       location: "Melbourne",
       price: 6,
       review: 5,
@@ -63,8 +63,8 @@ class Repository extends ChangeNotifier {
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/icecream/icecream3.jpg",
-      title: "Icecream Berry Bliss",
+      backgroundImage: "assets/images/icecream/icecream2.jpg",
+      title: "Berry Bliss",
       location: "Sydney",
       price: 4,
       review: 3,
@@ -72,8 +72,8 @@ class Repository extends ChangeNotifier {
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/icecream/icecream4.jpg",
-      title: "Icecream Vanilla Dream",
+      backgroundImage: "assets/images/icecream/icecream3.jpg",
+      title: "Vanilla Dream",
       location: "Melbourne",
       price: 5,
       review: 5,
@@ -85,7 +85,7 @@ class Repository extends ChangeNotifier {
   // Chocolate List
   List<Itemlist> chocolateList = [
     Itemlist(
-      backgroundImage: "../images/chocolate/chocolate1.jpg",
+      backgroundImage: "assets/images/chocolate/chocolate0.jpg",
       title: "Dark Temptation",
       location: "Sydney",
       price: 3,
@@ -94,7 +94,7 @@ class Repository extends ChangeNotifier {
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/chocolate/chocolate2.jpg",
+      backgroundImage: "assets/images/chocolate/chocolate1.jpg",
       title: "Milk Chocolate Dream",
       location: "Melbourne",
       price: 4,
@@ -103,7 +103,7 @@ class Repository extends ChangeNotifier {
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/chocolate/chocolate3.jpg",
+      backgroundImage: "assets/images/chocolate/chocolate2.jpg",
       title: "Chocolate Cravings",
       location: "Sydney",
       price: 5,
@@ -112,7 +112,7 @@ class Repository extends ChangeNotifier {
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/chocolate/chocolate4.jpg",
+      backgroundImage: "assets/images/chocolate/chocolate3.jpg",
       title: "Caramel Chocolate Delight",
       location: "Melbourne",
       price: 6,
@@ -125,38 +125,38 @@ class Repository extends ChangeNotifier {
   // Cake List
   List<Itemlist> cakeList = [
     Itemlist(
-      backgroundImage: "../images/cakes/cake0.jpg",
+      backgroundImage: "assets/images/cakes/cake0.jpg",
       title: "Velvet Indulgence",
       location: "Sydney",
       price: 15,
-      review: 4,
+      review: 2,
       category: "cake",
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/cakes/cake1.jpg",
-      title: "Chocolate Fantasy",
+      backgroundImage: "assets/images/cakes/cake1.jpg",
+      title: "Chocolate",
       location: "Melbourne",
       price: 18,
-      review: 5,
+      review: 3,
       category: "cake",
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/cakes/cake2.jpg",
-      title: "Lemon Cheesecake",
+      backgroundImage: "assets/images/cakes/cake2.jpg",
+      title: "Cheesecake",
       location: "Sydney",
       price: 14,
-      review: 4,
+      review: 1,
       category: "cake",
       isCart: false,
     ),
     Itemlist(
-      backgroundImage: "../images/cakes/cake3.jpg",
+      backgroundImage: "assets/images/cakes/cake3.jpg",
       title: "ShortCake",
       location: "Melbourne",
       price: 16,
-      review: 5,
+      review: 2,
       category: "cake",
       isCart: false,
     ),
