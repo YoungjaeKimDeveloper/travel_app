@@ -16,15 +16,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  Itemlist cateogry = Itemlist(
-    backgroundImage: "",
-    title: "Pizza",
-    location: "New York",
-    price: 15.0,
-    review: 4,
-    isCart: true,
-    category: "Pizza",
-  );
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -35,47 +26,58 @@ class _MainPageState extends State<MainPage> {
       ChocoPage(),
     ];
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text(
           "Grab a bite and sip",
           style: GoogleFonts.italianno(
             textStyle: TextStyle(fontWeight: FontWeight.bold),
+            color: Colors.white,
             fontSize: 40.0,
           ),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/cart");
+            },
+            icon: Icon(Icons.favorite, color: Colors.white),
+          ),
+        ],
       ),
       body: pageList[currentIndex],
-      bottomNavigationBar: NavigationBar(
+      bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black,
-        selectedIndex: currentIndex,
-        onDestinationSelected: (int index) {
+        currentIndex: currentIndex,
+        onTap: (int index) {
           setState(() {
             currentIndex = index;
           });
         },
-        destinations: [
-          NavigationDestination(
+        items: [
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.coffee,
               color: currentIndex == 0 ? Colors.brown : Colors.grey,
             ),
             label: "Coffee",
           ),
-          NavigationDestination(
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.cake,
               color: currentIndex == 1 ? Colors.pink[500] : Colors.grey,
             ),
             label: "Cake",
           ),
-          NavigationDestination(
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.icecream,
               color: currentIndex == 2 ? Colors.blue[500] : Colors.grey,
             ),
             label: "Ice Cream",
           ),
-          NavigationDestination(
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.egg_alt,
               color: currentIndex == 3 ? Colors.brown[500] : Colors.grey,
@@ -84,7 +86,6 @@ class _MainPageState extends State<MainPage> {
           ),
         ],
       ),
-
       // 화면을 동적으로 그리겠다는 의미
     );
   }

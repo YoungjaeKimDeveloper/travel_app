@@ -7,7 +7,7 @@ class Itemlist {
   final double price;
   final int review;
   final String category;
-  final bool isCart;
+  bool isCart;
 
   Itemlist({
     required this.backgroundImage,

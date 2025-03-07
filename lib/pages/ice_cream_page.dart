@@ -11,7 +11,6 @@ class IceCreamPage extends StatelessWidget {
     // Consumer로 데이터 공유사용할수있도록함
     return Consumer<Repository>(
       builder: (context, value, child) {
-        print(value.getIcemcreamList());
         return GridView.builder(
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,

@@ -16,7 +16,7 @@ class Repository extends ChangeNotifier {
     Itemlist(
       backgroundImage: "assets/images/coffees/coffee1.png",
       title: "Cafe Serenade",
-      location: "Melbourne",
+      location: "Perth",
       price: 8,
       review: 1,
       category: "coffee",
@@ -56,7 +56,7 @@ class Repository extends ChangeNotifier {
     Itemlist(
       backgroundImage: "assets/images/icecream/icecream1.jpg",
       title: "Choco Swirl",
-      location: "Melbourne",
+      location: "Perth",
       price: 6,
       review: 2,
       category: "ice cream",
@@ -74,7 +74,7 @@ class Repository extends ChangeNotifier {
     Itemlist(
       backgroundImage: "assets/images/icecream/icecream3.jpg",
       title: "Vanilla Dream",
-      location: "Melbourne",
+      location: "Perth",
       price: 5,
       review: 2,
       category: "ice cream",
@@ -96,9 +96,9 @@ class Repository extends ChangeNotifier {
     Itemlist(
       backgroundImage: "assets/images/chocolate/chocolate1.jpg",
       title: "Chocolate Dream",
-      location: "Melbourne",
+      location: "Perth",
       price: 4,
-      review: 3,
+      review: 2,
       category: "chocolate",
       isCart: false,
     ),
@@ -107,16 +107,16 @@ class Repository extends ChangeNotifier {
       title: "Chocolate Cravings",
       location: "Sydney",
       price: 5,
-      review: 5,
+      review: 1,
       category: "chocolate",
       isCart: false,
     ),
     Itemlist(
       backgroundImage: "assets/images/chocolate/chocolate3.jpg",
       title: "Caramel Delight",
-      location: "Melbourne",
+      location: "Perth",
       price: 6,
-      review: 4,
+      review: 2,
       category: "chocolate",
       isCart: false,
     ),
@@ -136,7 +136,7 @@ class Repository extends ChangeNotifier {
     Itemlist(
       backgroundImage: "assets/images/cakes/cake1.jpg",
       title: "Chocolate",
-      location: "Melbourne",
+      location: "Perth",
       price: 18,
       review: 3,
       category: "cake",
@@ -154,23 +154,26 @@ class Repository extends ChangeNotifier {
     Itemlist(
       backgroundImage: "assets/images/cakes/cake3.jpg",
       title: "ShortCake",
-      location: "Melbourne",
+      location: "Perth",
       price: 16,
       review: 2,
       category: "cake",
       isCart: false,
     ),
   ];
+
   // 장바구니
   List<Itemlist> itemCart = [];
   // 장바구니 method + 추가
   void addItem(Itemlist list) {
+    list.isCart = true;
     itemCart.add(list);
     notifyListeners();
   }
 
   // 장바구니 method + 제거
   void deleteItem(Itemlist list) {
+    list.isCart = false;
     itemCart.remove(list);
     notifyListeners();
   }
