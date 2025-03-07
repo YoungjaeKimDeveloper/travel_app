@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:travel_app/models/repository.dart';
-import 'package:travel_app/pages/cart_page.dart';
+import 'package:travel_app/pages/favorite_page.dart';
 import 'package:travel_app/pages/intro_page.dart';
 import 'package:travel_app/pages/main_page.dart';
 
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => const IntroPage(),
         "/main": (context) => MainPage(),
-        "/cart": (context) => CartPage(),
+        "/favorite": (context) => CartPage(),
       },
     );
   }

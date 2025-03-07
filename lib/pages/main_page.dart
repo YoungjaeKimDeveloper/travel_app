@@ -1,8 +1,6 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 // Cateogry
-import "package:travel_app/models/item_list.dart";
 import 'package:travel_app/pages/cake_page.dart';
 import 'package:travel_app/pages/choco_page.dart';
 import 'package:travel_app/pages/coffee_page.dart';
@@ -40,7 +38,7 @@ class _MainPageState extends State<MainPage> {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, "/cart");
+              Navigator.pushNamed(context, "/favorite");
             },
             icon: Icon(Icons.favorite, color: Colors.white),
           ),

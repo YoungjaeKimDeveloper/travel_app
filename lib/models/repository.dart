@@ -15,7 +15,7 @@ class Repository extends ChangeNotifier {
     ),
     Itemlist(
       backgroundImage: "assets/images/coffees/coffee1.png",
-      title: "Cafe Serenade",
+      title: "Dog Cafe",
       location: "Perth",
       price: 8,
       review: 1,
@@ -104,7 +104,7 @@ class Repository extends ChangeNotifier {
     ),
     Itemlist(
       backgroundImage: "assets/images/chocolate/chocolate2.jpg",
-      title: "Chocolate Cravings",
+      title: "Cravings",
       location: "Sydney",
       price: 5,
       review: 1,
@@ -135,7 +135,7 @@ class Repository extends ChangeNotifier {
     ),
     Itemlist(
       backgroundImage: "assets/images/cakes/cake1.jpg",
-      title: "Chocolate",
+      title: "Berry Berry",
       location: "Perth",
       price: 18,
       review: 3,
@@ -144,7 +144,7 @@ class Repository extends ChangeNotifier {
     ),
     Itemlist(
       backgroundImage: "assets/images/cakes/cake2.jpg",
-      title: "Cheesecake",
+      title: "Cheeze world",
       location: "Sydney",
       price: 14,
       review: 1,
@@ -170,6 +170,7 @@ class Repository extends ChangeNotifier {
     itemCart.add(list);
     notifyListeners();
   }
+  //
 
   // 장바구니 method + 제거
   void deleteItem(Itemlist list) {
@@ -197,5 +198,10 @@ class Repository extends ChangeNotifier {
   // 아이스크림 리스트
   List<Itemlist> getIcemcreamList() {
     return iceCreamList;
+  }
+
+  // Cart 가져오기
+  List<Itemlist> getCartList() {
+    return itemCart;
   }
 }

@@ -55,40 +55,20 @@ class IntroPage extends StatelessWidget {
                       ),
                       children: [
                         TextSpan(
-                          text: "Explore Your  \n",
-                          style: GoogleFonts.cormorantSc(
-                            textStyle: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 24.0,
-                            ),
-                          ),
-                        ),
-                        TextSpan(
-                          text: "Destination",
-                          style: GoogleFonts.cormorantSc(
-                            textStyle: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                            ),
-                          ),
-                        ),
-
-                        TextSpan(
-                          text: " \nWe Provide the  ",
-                          style: GoogleFonts.cormorantSc(
-                            textStyle: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                            ),
-                          ),
-                        ),
-
-                        TextSpan(
-                          text: "\nWorld Best",
+                          text: "\nSweet ",
                           style: GoogleFonts.eczar(
                             textStyle: TextStyle(
-                              color: Colors.red,
+                              color: Colors.brown[100],
+                              fontWeight: FontWeight.w900,
+                              fontSize: 30.0,
+                            ),
+                          ),
+                        ),
+                        TextSpan(
+                          text: "Love",
+                          style: GoogleFonts.eczar(
+                            textStyle: TextStyle(
+                              color: Colors.red[400],
                               fontWeight: FontWeight.w900,
                               fontSize: 30.0,
                             ),
@@ -96,7 +76,7 @@ class IntroPage extends StatelessWidget {
                         ),
 
                         TextSpan(
-                          text: " \nAccommodation",
+                          text: " \nThe Local Shop",
                           style: GoogleFonts.cormorantSc(
                             textStyle: TextStyle(
                               color: Colors.white,
@@ -105,10 +85,19 @@ class IntroPage extends StatelessWidget {
                           ),
                         ),
                         TextSpan(
-                          text: "\nStart Your journey ",
+                          text: "\nStart making",
                           style: GoogleFonts.goblinOne(
                             textStyle: TextStyle(
                               color: Colors.yellow,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          ),
+                        ),
+                        TextSpan(
+                          text: "\nmemories ",
+                          style: GoogleFonts.goblinOne(
+                            textStyle: TextStyle(
+                              color: Colors.pink[50],
                               fontWeight: FontWeight.w900,
                             ),
                           ),
