@@ -1,23 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:travel_app/components/category_tile.dart';
 import 'package:travel_app/models/item_list.dart';
+import 'package:travel_app/models/repository.dart';
 
-class CoffeePage extends StatelessWidget {
+class CoffeePage extends StatefulWidget {
   CoffeePage({super.key});
-  // Test
-  Itemlist itemlist = Itemlist(
-    backgroundImage:
-        "/Users/youngjaekim/Desktop/travelApp/travel_app/assets/images/cakes/cake0.jpg",
-    title: "Icecream Frozen ",
-    location: "Sydney",
-    price: 5,
-    review: 4,
-    category: "ice cream",
-    isCart: false,
-  );
+
+  @override
+  State<CoffeePage> createState() => _CoffeePageState();
+}
+
+class _CoffeePageState extends State<CoffeePage> {
+  // Repositry 에서 정보 가져와 줘야함
+
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3), itemBuilder: (BuildContext context,int index){
-      
-    });
+    return Consumer<Repository>(
+      builder: (context, value, child) {
+        return GridView.builder(
+          padding: EdgeInsets.all(5),
+          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+            maxCrossAxisExtent: 200,
+            childAspectRatio: 0.8,
+          ),
+          itemCount: value.getCoffeeLists().length,
+          itemBuilder: (BuildContext context, int index) {
+            return CategoryTile(itemlist: value.getCoffeeLists()[index]);
+          },
+        );
+      },
+    );
   }
 }

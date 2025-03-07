@@ -18,4 +18,9 @@ class Itemlist {
     required this.category,
     required this.isCart,
   });
+
+  @override
+  String toString() {
+    return 'Itemlist(title: $title, location: $location, price: $price, review: $review)';
+  }
 }
