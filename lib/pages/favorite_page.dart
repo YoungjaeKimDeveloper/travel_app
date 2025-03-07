@@ -22,7 +22,7 @@ class _CartPageState extends State<CartPage> {
           appBar: AppBar(
             backgroundColor: Colors.black,
             title: Text(
-              "Grab a bite and sip",
+              "Favorite",
               style: GoogleFonts.italianno(
                 textStyle: TextStyle(fontWeight: FontWeight.bold),
                 color: Colors.white,
